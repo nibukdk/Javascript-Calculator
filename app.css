@@ -1,0 +1,38 @@
+html,body,.container,.outer_row{
+  height: 100%;
+  width: auto;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.well{
+  background: #FFF;
+  border: 0.5px solid #000;
+}
+h1{
+  font-family: 'Lobster', cursive;
+    text-align: center;
+
+}
+.screen{
+  height: 20%;
+}
+.button_area{
+  height: 70%;
+}
+.upper_half,.lower_half{
+  height: 48%;
+  padding: 0;
+}
+.thumbnail{
+  border: none;
+}
+.lower_half .thumbnail{
+  margin-left: 16px;
+  margin-right: 8px;
+}
+.btn{
+  width: 75%;
+  text-align: center;
+}
