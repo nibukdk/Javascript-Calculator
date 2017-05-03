@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Js Calculator</title>
-  <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <link href="app.css" rel="stylesheet">
+    <head>
+      <title>Js Calculator</title>
+      <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+      <link href="app.css" rel="stylesheet">
+      <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script  type="text/javascript" src="app.js"></script>
 
+    </head>
 
-</head>
-
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-9 col-md-9 col-sm-9">
-        <div class="well outer_well">
-          <div class="screen"></div>
-          <div class="lower_body">
-            <div class="well">
-              <button class="btn btn-default col-md-3">AC</button>
-              <button class="btn btn-default col-md-3">CE</button>
-              <button class="btn btn-default col-md-3">%</button>
-              <button class="btn btn-default col-md-3">/</button>
-
-            </div>
-            <div class="well">
-              <button class="btn btn-default col-md-3">7</button>
-              <button class="btn btn-default col-md-3">8</button>
-              <button class="btn btn-default col-md-3">9</button>
-              <button class="btn btn-default col-md-3">*</button>
-            </div>
-            <div class="well">
-              <button class="btn btn-default col-md-3">4</button>
-              <button class="btn btn-default col-md-3">5</button>
-              <button class="btn btn-default col-md-3">6</button>
-              <button class="btn btn-default col-md-3">-</button>
-            </div>
-            <div class="well pull-right big_button_holder">
-              <button class="btn btn-default col-md-12">+</button>
-            </div>
-            <div class="well fourth_line">
-              <button class="btn btn-default col-md-4">1</button>
-              <button class="btn btn-default col-md-4">2</button>
-              <button class="btn btn-default col-md-4">3</button>
-
-            </div>
-
-            <div class="well fifth_line">
-
-              <button class="btn btn-default col-md-4">0</button>
-              <button class="btn btn-default col-md-4">.</button>
-              <button class="btn btn-default col-md-4">=</button>
-
+    <body>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-md-9 col-sm-9">
+            <div class="well outer_well">
+              <div class="screen">
+                <div class="result pull-right"></div>
+                <div class="work pull-left"></div>
+              </div>
+              <div class="lower_body">
+                <div class="well">
+                  <button class="btn btn-default col-md-3 col-sm-3">AC</button>
+                  <button class="btn btn-default col-md-3 col-sm-3">CE</button>
+                  <button class="btn btn-default col-md-3 col-sm-3 divide">%</button>
+                  <button class="btn btn-default col-md-3 col-sm-3">/</button>
+                </div>
+                <div class="well">
+                  <button class="btn btn-default col-md-3 col-sm-3">7</button>
+                  <button class="btn btn-default col-md-3 col-sm-3">8</button>
+                  <button class="btn btn-default col-md-3 col-sm-3">9</button>
+                  <button class="btn btn-default col-md-3 col-sm-3 multiply">*</button>
+                </div>
+                <div class="well">
+                  <button class="btn btn-default col-md-3 col-sm-3">4</button>
+                  <button class="btn btn-default col-md-3 col-sm-3">5</button>
+                  <button class="btn btn-default col-md-3 col-sm-3">6</button>
+                  <button class="btn btn-default col-md-3 col-sm-3 sub">-</button>
+                </div>
+                <div class="well pull-right big_button_holder">
+                  <button class="btn btn-default col-md-12 col-sm-12 add">+</button>
+                </div>
+                <div class="well fourth_line">
+                  <button class="btn btn-default col-md-4 col-sm-4">1</button>
+                  <button class="btn btn-default col-md-4 col-sm-4">2</button>
+                  <button class="btn btn-default col-md-4 col-sm-4">3</button>
+                </div>
+                <div class="well fifth_line">
+                  <button class="btn btn-default col-md-4 col-sm-4">0</button>
+                  <button class="btn btn-default col-md-4 col-sm-4">.</button>
+                  <button class="btn btn-default col-md-4 col-sm-4">=</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</body>
-
+    </body>
 </html>

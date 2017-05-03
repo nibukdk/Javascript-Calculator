@@ -22,6 +22,24 @@ body {
   border: 0.3px solid #000;
   background: #ECEFF1;
   color: #000;
+  font-family: 'Lobster', cursive;
+}
+.outer_well .screen .result{
+  border: 1px solid #ECEFF1;
+  height: 40%;
+  width: 100%;
+  text-align: right;
+  padding: 8px;
+
+
+}
+.outer_well .screen .work{
+ border: 1px solid #ECEFF1;
+ width: 100%;
+ height: 60%;
+ text-align: left;
+ padding: 8px;
+
 }
 
 .lower_body {
@@ -30,25 +48,27 @@ body {
   border: 0.3px solid #000;
 }
 
-
-
 .lower_body .well {
   height: 20%;
   margin: 0;
   padding: 0;
 }
-.fourth_line, .fifth_line{
+
+.fourth_line, .fifth_line {
   width: 75%;
 }
-.lower_body .big_button_holder{
+
+.lower_body .big_button_holder {
   width: 25%;
   height: 40%;
 }
+
 h1 {
   font-family: 'Lobster', cursive;
   text-align: center;
 }
-.btn{
+
+.btn {
   text-align: center;
   font-family: 'Lobster';
   margin: 0 auto;
@@ -58,12 +78,13 @@ h1 {
   background: #212121;
   color: #F5F5F5;
 }
-.btn:hover{
-  background:#212121;
+
+.btn:hover {
+  background: #212121;
   color: #F5F5F5;
 }
 
-.lower_body .big_button_holder .btn{
+.lower_body .big_button_holder .btn {
   width: 100%;
   height: 100%;
   padding: 1px;
