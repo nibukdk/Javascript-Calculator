@@ -1,24 +1,30 @@
 $(document).ready(function() {
-  var add = $('add').val(),
-      sub = $('sub').val(),
-      divide = $('divide').val(),
-      multiply= $('multiply').val();
+  var strings;
+  $('.btn').on('click', function() {
+    var digit = $(this).html();
 
-    function add(var input1, var input2){
-      return input1+input2;
-    }
-    function sub(var input1, var input2){
-      return input1+input2;
-    }
-    function multiply(var input1, var input2){
-      return input1+input2;
-    }
-    function divide(var input1, var input2){
-      return input1+input2;
+
+    if (digit === "AC") {
+      $('.work').empty();
+      $('.work').html(0);
+      $('.result').empty();
+    } else if (digit === "DEL") {
+      if ($('.work').html().length === 1) {
+        $('.work').html(0);
+      } else {
+        var newString = $('.work').html().slice(0, $('.work').html().length - 1);
+        $('.work').html(newString);
+      }
+    } else if (digit === "=") {
+
+      var evaluated = eval(strings);
+      $('.result').html(evaluated);
+    } else {
+      $('.work').append(digit);
+      strings = $('.work').html();
     }
 
-  $('.btn').on('click',function(){
-    var digit=$(this).html();
-    $('.work').append(digit);
   });
+
+
 });

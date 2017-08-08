@@ -24,22 +24,21 @@ body {
   color: #000;
   font-family: 'Lobster', cursive;
 }
-.outer_well .screen .result{
+
+.outer_well .screen .result {
   border: 1px solid #ECEFF1;
   height: 40%;
   width: 100%;
   text-align: right;
   padding: 8px;
-
-
 }
-.outer_well .screen .work{
- border: 1px solid #ECEFF1;
- width: 100%;
- height: 60%;
- text-align: left;
- padding: 8px;
 
+.outer_well .screen .work {
+  border: 1px solid #ECEFF1;
+  width: 100%;
+  height: 60%;
+  text-align: left;
+  padding: 8px;
 }
 
 .lower_body {
@@ -54,23 +53,20 @@ body {
   padding: 0;
 }
 
-.fourth_line, .fifth_line {
-  width: 75%;
-}
-
-.lower_body .big_button_holder {
-  width: 25%;
-  height: 40%;
-}
-
 h1 {
   font-family: 'Lobster', cursive;
   text-align: center;
 }
 
+.btn:hover {
+  background: #424242;
+  color: #F5F5F5;
+}
+
 .btn {
   text-align: center;
   font-family: 'Lobster';
+  font-size: 1.53em;
   margin: 0 auto;
   padding: 5px;
   height: 60%;
@@ -78,14 +74,6 @@ h1 {
   background: #212121;
   color: #F5F5F5;
 }
-
-.btn:hover {
-  background: #212121;
-  color: #F5F5F5;
-}
-
-.lower_body .big_button_holder .btn {
-  width: 100%;
-  height: 100%;
-  padding: 1px;
+.btn:focus{
+  outline: none;
 }
