@@ -76,4 +76,7 @@ h1 {
 }
 .btn:focus{
   outline: none;
+  background: #212121;
+  color: #F5F5F5;
+
 }
