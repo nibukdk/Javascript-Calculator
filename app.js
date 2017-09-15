@@ -1,28 +1,30 @@
 $(document).ready(function() {
-
   var result, strings;
   var inp1, inp2;
   var operator;
+  var counter = 0;
   $('.btn').on('click', function() {
-
+    /*counter=counter+1;
+    console.log(counter);*/
     var digit = $(this).html();
 
     if (digit === "AC") {
       $('.work').empty();
       $('.work').html(0);
       $('.result').html(0);
-    } else if (digit === "DEL") {
 
-      if ($('.work').html().length === 1 || $('.work').html().length < 1) {
+    } else if (digit === "DEL") {
+      //Incase of del key press
+      if ($('.work').html().length <= 1) {
         $('.work').html(0);
       } else {
-        var newString = $('.work').html().slice(1, $('.work').html().length - 1);
+        var newString = $('.work').html().slice(0, $('.work').html().length - 1);
         $('.work').html(newString);
       }
     } else if (digit === "=") {
       strings = $('.work').html();
       var operatorPosition = strings.search('[+\*/-]');
-      
+
       if (operatorPosition < 0) {
         $('.result').html(strings);
       } else {
@@ -31,20 +33,22 @@ $(document).ready(function() {
           eval(strings);
           return resultCalculation();
         } catch (e) {
-          console.log('Error');
+
           var evaluated = "Error";
           $('.result').html(evaluated);
         }
 
       }
-
+      //Function to calculate and display final result
       function resultCalculation() {
         operator = strings[operatorPosition];
         var str1 = strings.slice(0, operatorPosition);
         var str2 = strings.slice(operatorPosition + 1, strings.length);
-        inp1 = parseInt(str1);
-        inp2 = parseInt(str2)
+        inp1 = parseFloat(str1);
+        inp2 = parseFloat(str2)
+
         $('.result').html(calculator());
+
       }
 
     } else {
@@ -53,22 +57,19 @@ $(document).ready(function() {
 
     }
 
-    /**
-      }**/
+    // define  initial mode of operation
 
     function calculator() {
       if (operator === "+") {
-        //result=add();
         return add();
       } else if (operator === "-") {
-        //result=add();
         return sub();
       } else if (operator === "/") {
-        //result=add();
         return div();
       } else if (operator === "*") {
-        //result=add();
+      
         return multiply();
+
       } else {
         console.log(error);
       }
@@ -91,7 +92,5 @@ $(document).ready(function() {
 
       return inp1 / inp2;
     }
-
-
   });
 });
